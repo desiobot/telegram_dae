@@ -31,7 +31,7 @@ if(isset($message['text']))
 	}	
 	else
 	{
-		$response = "Comando non valido!";
+		$response = "Comando non valido! Invia  la tua posizione per la posizione dei DAE";
 
 	}
 }
