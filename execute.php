@@ -31,37 +31,37 @@ if(isset($message['text']))
 	}	
 	else
 	{
-		$response = "Comando non valido! Invia  la tua posizione per la posizione dei DAE";
+		$response = "Comando non valido! Invia  la tua posizione per usufruire del servizio";
 
 	}
 }
 elseif(isset($message['audio']))
 {
-	$response = "Ho ricevuto un messaggio audio";
+	$response = "Ho ricevuto un messaggio audio che verrà ignorato";
 }
 elseif(isset($message['document']))
 {
-	$response = "Ho ricevuto un messaggio document";
+	$response = "Ho ricevuto un messaggio documento che verrà ignorato";
 }
 elseif(isset($message['photo']))
 {
-	$response = "Ho ricevuto un messaggio photo";
+	$response = "Ho ricevuto un messaggio foto che verrà ignorato";
 }
 elseif(isset($message['sticker']))
 {
-	$response = "Ho ricevuto un messaggio sticker";
+	$response = "Ho ricevuto un messaggio sticker che verrà ignorato";
 }
 elseif(isset($message['video']))
 {
-	$response = "Ho ricevuto un messaggio video";
+	$response = "Ho ricevuto un messaggio video che verrà ignorato";
 }
 elseif(isset($message['voice']))
 {
-	$response = "Ho ricevuto un messaggio voice";
+	$response = "Ho ricevuto un messaggio vocale che verrà ignorato";
 }
 elseif(isset($message['contact']))
 {
-	$response = "Ho ricevuto un messaggio contact";
+	$response = "Ho ricevuto un messaggio contatto che verrà ignorato";
 }
 elseif(isset($message['location']))
 {
@@ -72,7 +72,7 @@ elseif(isset($message['location']))
 }
 elseif(isset($message['venue']))
 {
-	$response = "Ho ricevuto un messaggio venue";
+	$response = "Ho ricevuto un messaggio venue che verrà ignorato";
 }
 else
 {
