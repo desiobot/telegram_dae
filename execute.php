@@ -53,7 +53,7 @@ if(isset($message['text']))
 	}
 	elseif($text=="demo")
 	{
-		$response = "https://maps.googleapis.com/maps/api/staticmap?zoom=13&size=300x300&maptype=roadmap&markers=color:red%7Clabel:A%7C45.626687,9.205079&markers=color:red%7Clabel:B%7C45.618636,9.210455&markers=color:red%7Clabel:C%7C45.618451,9.193961&markers=color:green%7Clabel:%7C45.617213,9.207562";
+		$response = "https://maps.googleapis.com/maps/api/staticmap?size=300x300&maptype=roadmap&markers=color:red%7Clabel:A%7C45.626687,9.205079&markers=color:red%7Clabel:B%7C45.618636,9.210455&markers=color:red%7Clabel:C%7C45.618451,9.193961&markers=color:green%7Clabel:%7C45.617213,9.207562";
 		
 	}	
 	else
