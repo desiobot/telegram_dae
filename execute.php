@@ -5,7 +5,7 @@ function sendImage($idChat, $linkImage) {
 	$url        = $bot_url . "sendPhoto?chat_id=" . $chat_id ;
 	
 	$post_fields = array('chat_id'   => $chat_id,
-	    'photo'     => new CURLFile($linkImage)
+		  'photo'     => new CURLFile(realpath("image.png"))
 	);
 	
 	$ch = curl_init(); 
