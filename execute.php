@@ -1,7 +1,7 @@
 <?php
 
 function sendImage($idChat, $linkImage) {
-	$bot_url    = "https://api.telegram.org/bot<bot_id>/";
+	$bot_url    = "https://api.telegram.org/bot" . getenv('token') . "/";
 	$url        = $bot_url . "sendPhoto?chat_id=" . $chat_id ;
 	
 	$post_fields = array('chat_id'   => $chat_id,
