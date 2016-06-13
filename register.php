@@ -1,8 +1,8 @@
 <?php
 
 // PARAMETRI DA MODIFICARE
-$WEBHOOK_URL = '';
-$BOT_TOKEN = '';
+$WEBHOOK_URL = getenv('url');
+$BOT_TOKEN = getenv('token');
 
 // NON APPORTARE MODIFICHE NEL CODICE SEGUENTE
 $API_URL = 'https://api.telegram.org/bot' . $BOT_TOKEN .'/';
