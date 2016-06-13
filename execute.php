@@ -50,6 +50,10 @@ if(isset($message['text']))
 	elseif($text=="info")
 	{
 		$response = "Creato per il Comune di Desio";
+	}
+	elseif($text=="demo")
+	{
+		$response = "Messaggio DEMO";
 	}	
 	else
 	{
