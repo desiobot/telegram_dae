@@ -27,7 +27,7 @@ if(isset($message['text']))
 	}
 	elseif($text=="info")
 	{
-		$response = "Creato per il Comune di Desio";
+		$response = "Creato per il Comune di Desio\r\nVersione 1.0";
 	}	
 	else
 	{
