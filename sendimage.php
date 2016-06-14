@@ -13,9 +13,10 @@ function random_string($length) {
 }
 
 $name=random_string(10) . ".png";
-echo $name;
+echo $name . "\r\n";
 
 $source = $_GET['link'];
+echo $source . "\r\n";
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $source);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
@@ -28,7 +29,7 @@ $destination = $name;
 $file = fopen($destination, "w+");
 fputs($file, $data);
 fclose($file);
-
+echo "Salva file" . "\r\n";
 
 $bot_url    = "https://api.telegram.org/bot" . getenv('token') . "/";
 $url        = $bot_url . "sendPhoto?chat_id=" . $_GET['chatid'];
@@ -46,5 +47,6 @@ curl_setopt($ch, CURLOPT_URL, $url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
 curl_setopt($ch, CURLOPT_POSTFIELDS, $post_fields); 
 $output = curl_exec($ch);
-
+echo "Invia" . "\r\n";
 unlink($name);
+echo "Elimina" . "\r\n";
