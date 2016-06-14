@@ -25,17 +25,22 @@ if(isset($message['text']))
 	{
 		$response = "Ciao $firstname, benvenuto nel servizio di interrogazione posizione DAE. Invia la tua posizione!";
 	}
-	elseif($text=="info")
+	elseif($text=="/info")
 	{
-		$response = "Creato per il Comune di Desio";
+		$response = "Creato per il Comune di Desio by @ipersoft e @olistik";
 	}
-	elseif($text=="ver")
+	elseif($text=="/ver")
 	{
 		$response = "Versione 1.0";
 	}	
-	elseif($text=="chatid")
+	elseif($text=="/chatid")
 	{
 		$response = $chatId;
+	}
+	elseif(strpos($text, "/getdae") === 0)
+	{
+	$url="http://www.webconsole.it/infocitta_api/getdae?dae=$text";
+	$response = file_get_contents($url);
 	}	
 	else
 	{
