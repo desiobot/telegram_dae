@@ -27,8 +27,12 @@ if(isset($message['text']))
 	}
 	elseif($text=="info")
 	{
-		$response = "Creato per il Comune di Desio\r\nVersione 1.0";
+		$response = "Creato per il Comune di Desio";
 	}
+	elseif($text=="ver")
+	{
+		$response = "Versione 1.0";
+	}	
 	elseif($text=="chatid")
 	{
 		$response = $chatId;
