@@ -67,7 +67,7 @@ elseif(isset($message['location']))
 {
 //	$response = "Ho ricevuto un messaggio location $latitude $longitude";
 //	$url="http://www.webconsole.it/infocitta_api/dae?LAT=45.619502&LON=9.197949";
-	$url="http://www.webconsole.it/infocitta_api/dae?LAT=$latitude&LON=$longitude";
+	$url="http://www.webconsole.it/infocitta_api/dae?LAT=$latitude&LON=$longitude&CHATID=$chatId";
 	$response = file_get_contents($url);	
 }
 elseif(isset($message['venue']))
