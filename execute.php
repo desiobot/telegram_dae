@@ -39,7 +39,7 @@ if(isset($message['text']))
 	}
 	elseif(strpos($text, "/getdae") === 0)
 	{
-	$url="http://www.webconsole.it/infocitta_api/getdae?dae=$text";
+	$url=getenv('webserver') . "getdae?dae=$text";
 	$response = file_get_contents($url);
 	}	
 	else
@@ -80,7 +80,7 @@ elseif(isset($message['location']))
 {
 //	$response = "Ho ricevuto un messaggio location $latitude $longitude";
 //	$url="http://www.webconsole.it/infocitta_api/dae?LAT=45.619502&LON=9.197949";
-	$url="http://www.webconsole.it/infocitta_api/dae?LAT=$latitude&LON=$longitude&CHATID=$chatId";
+	$url=getenv('webserver') . "dae?LAT=$latitude&LON=$longitude&CHATID=$chatId";
 	$response = file_get_contents($url);	
 }
 elseif(isset($message['venue']))
